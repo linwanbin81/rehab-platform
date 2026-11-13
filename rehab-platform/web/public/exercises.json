@@ -1,0 +1,34 @@
+{
+  "version": "upper-limb-reference-2026-11-13",
+  "scope": "肩肘主动活动观察；需由指导者判断动作是否适合本人，尤其是术后阶段。下列参考资料不构成本系统的自动处方。",
+  "exercises": [
+    {
+      "code": "shoulder_flexion",
+      "name": "肩前屈（主动前举）",
+      "view": "侧面：训练侧朝向镜头，肩、肘、腕、髋完整入画",
+      "steps": ["站立或坐稳，手臂自然放于体侧。", "沿身体前方缓慢抬臂，肘部尽量伸直，按本人获准的活动范围进行。", "缓慢回到起始位置；不要为了追求角度而耸肩或后仰。"],
+      "measurement": "髋—肩—肘在图像平面内的夹角；侧面机位用于观察前举投影。",
+      "source": {"title": "AAOS / ASES · Shoulder Surgery Exercise Guide", "section": "Shoulder Forward Elevation (Active)", "url": "https://orthoinfo.aaos.org/en/recovery/shoulder-surgery-exercise-guide/"},
+      "caution": "原文为肩部手术后的练习指导，明确要求先咨询手术医生或物理治疗师；不能将其中的训练量直接套用给所有人。"
+    },
+    {
+      "code": "shoulder_abduction",
+      "name": "肩外展（主动侧举）",
+      "view": "正面：面向镜头，肩、肘、腕、髋完整入画",
+      "steps": ["站立或坐稳，手臂放于体侧。", "沿身体侧方缓慢抬臂，肘部尽量伸直，在本人获准的活动范围内进行。", "不要耸肩或侧倾躯干，缓慢放回体侧。"],
+      "measurement": "髋—肩—肘在图像平面内的夹角；正面机位用于观察外展投影。",
+      "source": {"title": "AAOS / ASES · Shoulder Surgery Exercise Guide", "section": "Shoulder Abduction (Active)", "url": "https://orthoinfo.aaos.org/en/recovery/shoulder-surgery-exercise-guide/"},
+      "caution": "原文特别指出某些手术后不推荐此动作；须经手术医生或物理治疗师确认。"
+    },
+    {
+      "code": "elbow_flexion",
+      "name": "肘屈伸（无负重观察）",
+      "view": "侧面：训练侧朝向镜头，保持上臂与前臂不朝向镜头",
+      "steps": ["站立或坐稳，上臂贴近体侧，前臂自然放下。", "保持上臂相对稳定，缓慢屈肘，将手带向肩部。", "缓慢伸肘回到本人舒适的起始姿势，避免甩动。"],
+      "measurement": "180° 减去肩—肘—腕的图像平面夹角，即肘屈曲投影角。",
+      "source": {"title": "AAOS / ASES · Rotator Cuff and Shoulder Conditioning Program", "section": "10. Elbow Flexion", "url": "https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/"},
+      "caution": "原文包含负重强化与进阶安排；本原型只参考其肘贴近体侧、缓慢屈伸的动作要点，采用无负重观察，不照搬负重和训练量。"
+    }
+  ],
+  "rules_note": "12°启动变化、6°返回滞回、0.65可见性、0.8秒遮挡重置等属于待验证的工程识别规则；目标角度、次数、保持与节奏属于个体计划参数，不宣称为指南标准值。"
+}

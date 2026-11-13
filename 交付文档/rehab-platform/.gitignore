@@ -1,0 +1,9 @@
+server/target/
+server/data/
+web/node_modules/
+web/dist/
+algorithm/__pycache__/
+.runtime/
+.tools/
+*.log
+

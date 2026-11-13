@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "舒展：启动平台（已有构建）",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/start.ps1", "-SkipBuild", "-NoBrowser"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "舒展：停止后台平台",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/stop.ps1"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "舒展：重新构建并启动",
+      "dependsOn": ["舒展：停止后台平台"],
+      "dependsOrder": "sequence",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/start.ps1", "-NoBrowser"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "舒展：前端开发（热更新）",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": ["run", "dev"],
+      "options": { "cwd": "${workspaceFolder}/web" },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "舒展：Python 分析服务（前台）",
+      "type": "process",
+      "command": "python",
+      "args": ["-u", "service.py"],
+      "options": { "cwd": "${workspaceFolder}/algorithm" },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "舒展：Java 后端（已有构建，前台）",
+      "type": "process",
+      "command": "java",
+      "args": ["-Dfile.encoding=UTF-8", "-jar", "target/rehab-platform-0.1.0.jar"],
+      "options": { "cwd": "${workspaceFolder}/server" },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "舒展：Python 规则测试",
+      "type": "process",
+      "command": "python",
+      "args": ["-m", "unittest", "-v", "test_service.py"],
+      "options": { "cwd": "${workspaceFolder}/algorithm" },
+      "problemMatcher": []
+    },
+    {
+      "label": "舒展：数据库事务与版本测试",
+      "type": "process",
+      "command": "python",
+      "args": ["tests/transaction_check.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    }
+  ]
+}

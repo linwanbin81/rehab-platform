@@ -1,0 +1,30 @@
+0 verbose cli D:\Application\1-30\43-node\node.exe D:\Application\1-30\43-node\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.6.2
+2 info using node@v24.12.0
+3 silly config load:file:D:\Application\1-30\43-node\node_modules\npm\npmrc
+4 silly config load:file:E:\2025work\6-project\project1_work\rehab-platform\web\.npmrc
+5 silly config load:file:C:\Users\34886\.npmrc
+6 silly config load:file:C:\Users\34886\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install @mediapipe/tasks-vision@1.2.2
+8 verbose argv "install" "@mediapipe/tasks-vision@1.2.2" "--save-exact" "--cache" "..\\..\\.tools\\npm-cache" "--no-audit" "--no-fund"
+9 verbose logfile logs-max:10 dir:E:\2025work\6-project\project1_work\.tools\npm-cache\_logs\2026-11-06T03_48_00_800Z-
+10 verbose logfile E:\2025work\6-project\project1_work\.tools\npm-cache\_logs\2026-11-06T03_48_00_800Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 silly fetch manifest @mediapipe/tasks-vision@1.2.2
+15 silly packumentCache full:https://registry.npmjs.org/@mediapipe%2ftasks-vision cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@mediapipe%2ftasks-vision 1831ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@mediapipe%2ftasks-vision set size:undefined disposed:false
+18 silly placeDep ROOT @mediapipe/tasks-vision@1.2.2 OK for: rehab-platform-web@0.1.0 want: 1.2.2
+19 silly reify moves {}
+20 http cache @mediapipe/tasks-vision@https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-1.2.2.tgz 1ms (cache hit)
+21 silly tarball no local data for @mediapipe/tasks-vision@https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-1.2.2.tgz. Extracting by manifest.
+22 http fetch GET 200 https://registry.npmjs.org/@mediapipe/tasks-vision/-/tasks-vision-1.2.2.tgz 5860ms (cache miss)
+23 silly ADD node_modules/@mediapipe/tasks-vision
+24 verbose cwd E:\2025work\6-project\project1_work\rehab-platform\web
+25 verbose os Windows_NT 10.0.26200
+26 verbose node v24.12.0
+27 verbose npm  v11.6.2
+28 verbose exit 0
+29 info ok
