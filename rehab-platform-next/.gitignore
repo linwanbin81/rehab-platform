@@ -1,0 +1,8 @@
+node_modules/
+dist/
+target/
+.runtime/
+web/public/wasm/
+web/public/models/*.task
+*.mv.db
+*.trace.db

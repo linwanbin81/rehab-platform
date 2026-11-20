@@ -1,0 +1,13 @@
+server:
+  address: 127.0.0.1
+  port: ${REHAB_API_PORT:8082}
+
+spring:
+  application:
+    name: rehab-platform-next
+  datasource:
+    url: ${REHAB_JDBC_URL:jdbc:h2:file:./data/rehab-next}
+    username: sa
+    password: ""
+  flyway:
+    locations: classpath:db/migration
